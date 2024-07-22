@@ -1,8 +1,8 @@
 import "./App.css";
 
 function App() {
-  const IPL = ["CSK", "MI", "RCB", "SRH", "DC"];
-  const result = IPL.map((team) => <h1>{team}</h1>);
+  const IPL = ["CSK", "MI", "RCB", "SRH", "DC", "CSK"];
+  const result = IPL.map((team,index) => <h1 key={index}> {team} index is {index}</h1>);
 
   return (
     <>
